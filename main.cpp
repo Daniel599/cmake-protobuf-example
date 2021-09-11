@@ -1,10 +1,12 @@
 #include <iostream>
-#include "proto/message.pb.h"
+#include "my_protocol/my_protocol.pb.h"
+#include "my_app_protocol/my_app_protocol.pb.h"
 
 using namespace std;
 int main(int argc, char const *argv[])
 {
-  message::Message m;
+  my_app_protocol::AppStuff stuff;
+  my_protocol::Message m;
   cout << "Hello Proto!" << endl;
   return 0;
 }

@@ -1,0 +1,8 @@
+syntax = "proto2";
+import "my_protocol/my_protocol.proto";
+package my_app_protocol;
+
+message AppStuff {
+    required my_protocol.Message data = 1;
+    repeated int32 id = 2;
+}
